@@ -196,7 +196,7 @@
                 const animStart = 4;
                 let animItemPoint = window.innerHeight - animItemHeight / animStart;
                 if (animItemHeight > window.innerHeight) animItemPoint = window.innerHeight - window.innerHeight / animStart;
-                if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) animItem.classList.add("_active"); else if ();
+                if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) animItem.classList.add("_active"); else if (!animItem.classList.contains("_anim-no-hide")) ;
             }
         }
         function offset(el) {
